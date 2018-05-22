@@ -1,14 +1,14 @@
 package lugares;
 
-import seres.Cavaleiro;
+import seres.Conselho;
 
 public class Academia {
 
 	private Ordem ordem;
-    private Cavaleiro[] conselho;
+    private Conselho[] conselho;
     private Planeta planeta;
 
-    public Academia(Ordem ordem, Cavaleiro[] conselho, Planeta planeta) {
+    public Academia(Ordem ordem, Conselho[] conselho, Planeta planeta) {
     	this.ordem = ordem;
     	this.conselho = conselho;
     	this.planeta = planeta;
@@ -22,11 +22,11 @@ public class Academia {
     	return ordem;
     }
 
-    public void setConselho(Cavaleiro[] conselho) {
+    public void setConselho(Conselho[] conselho) {
     	this.conselho = conselho;
     }
 
-    public Cavaleiro[] getConselho() {
+    public Conselho[] getConselho() {
     	return conselho;
     }
 
