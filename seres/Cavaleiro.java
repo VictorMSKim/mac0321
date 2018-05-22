@@ -3,7 +3,7 @@ package seres;
 import lugares.Academia;
 import lugares.Planeta;
 
-public class Cavaleiro extends Jedi {
+public class Cavaleiro extends Jedi implements UsuarioDaForca {
 
     private int anoDeAprovacao;
     private SabreDeLuz sabre;

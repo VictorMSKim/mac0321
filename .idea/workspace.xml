@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e29ad3f7-6aaa-4309-a82f-8f9138ae3fe0" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seres/Aprendiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/seres/Aprendiz.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/seres/Cavaleiro.java" beforeDir="false" afterPath="$PROJECT_DIR$/seres/Cavaleiro.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/seres/Jedi.java" beforeDir="false" afterPath="$PROJECT_DIR$/seres/Jedi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seres/Lorde.java" beforeDir="false" afterPath="$PROJECT_DIR$/seres/Lorde.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seres/Mestre.java" beforeDir="false" afterPath="$PROJECT_DIR$/seres/Mestre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seres/Padawan.java" beforeDir="false" afterPath="$PROJECT_DIR$/seres/Padawan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seres/Ser.java" beforeDir="false" afterPath="$PROJECT_DIR$/seres/Ser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seres/Sith.java" beforeDir="false" afterPath="$PROJECT_DIR$/seres/Sith.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/seres/Youngling.java" beforeDir="false" afterPath="$PROJECT_DIR$/seres/Youngling.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -74,7 +66,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Missao.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Missao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/missao/Missao.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
@@ -98,8 +90,8 @@
       <file leaf-file-name="Jedi.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/seres/Jedi.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+            <state relative-caret-position="85">
+              <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -107,11 +99,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Cavaleiro.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Cavaleiro.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/seres/Cavaleiro.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+            <state relative-caret-position="85">
+              <caret line="5" column="62" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -153,15 +145,15 @@
         <option value="$PROJECT_DIR$/seres/SabreDeLuz.java" />
         <option value="$PROJECT_DIR$/seres/UsuarioDaForca.java" />
         <option value="$PROJECT_DIR$/missao/Missao.java" />
-        <option value="$PROJECT_DIR$/seres/Jedi.java" />
         <option value="$PROJECT_DIR$/seres/Lorde.java" />
         <option value="$PROJECT_DIR$/seres/Sith.java" />
-        <option value="$PROJECT_DIR$/seres/Cavaleiro.java" />
         <option value="$PROJECT_DIR$/seres/Padawan.java" />
         <option value="$PROJECT_DIR$/seres/Ser.java" />
         <option value="$PROJECT_DIR$/seres/Youngling.java" />
         <option value="$PROJECT_DIR$/seres/Mestre.java" />
         <option value="$PROJECT_DIR$/seres/Aprendiz.java" />
+        <option value="$PROJECT_DIR$/seres/Jedi.java" />
+        <option value="$PROJECT_DIR$/seres/Cavaleiro.java" />
       </list>
     </option>
   </component>
@@ -307,10 +299,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7371000" />
+    <option name="totallyTimeSpent" value="7860000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="974" height="1057" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -822,26 +815,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/seres/Jedi.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/seres/Cavaleiro.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/seres/Aprendiz.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -897,6 +870,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seres/Jedi.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="38" selection-start-line="5" selection-start-column="38" selection-end-line="5" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seres/Cavaleiro.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="62" selection-start-line="5" selection-start-column="62" selection-end-line="5" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
