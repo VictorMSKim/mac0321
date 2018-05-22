@@ -1,6 +1,7 @@
 package seres;
 
 import lugares.Academia;
+import lugares.Planeta;
 
 public class Lorde extends Sith {
 
@@ -8,8 +9,11 @@ public class Lorde extends Sith {
 
 	private double campoDeVidencia;
 
-	public Lorde(double porcentagemRaiva, String novoNome, Poder[] poderes, Academia academia, SabreDeLuz sabre, double campoDeVidencia) {
-		super(porcentagemRaiva, novoNome, poderes, academia);
+	public Lorde(String nome, String genero, String especie, String dataDeNascimento, Planeta localDeOrigem,
+				 double concentracaoDeMidichlorians, Academia academia, String novoNome, double porcentagemRaiva,
+                 Poder[] poderes, SabreDeLuz sabre, double campoDeVidencia) {
+		super(nome, genero, especie, dataDeNascimento, localDeOrigem, concentracaoDeMidichlorians, academia, novoNome,
+                porcentagemRaiva, poderes);
 		this.sabre = sabre;
 		this.campoDeVidencia = campoDeVidencia;
 	}

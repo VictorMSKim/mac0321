@@ -1,8 +1,9 @@
 package seres;
 
 import lugares.Academia;
+import lugares.Planeta;
 
-public abstract class Sith extends Ser {
+public abstract class Sith extends Ser implements UsuarioDaForca {
 
 	private Academia academia;
 
@@ -12,11 +13,13 @@ public abstract class Sith extends Ser {
 
 	private Poder[] poderes = new Poder[Poder.NUMERO_PODERES];
 
-	public Sith(double porcentagemRaiva, String novoNome, Poder[] poderes, Academia academia) {
-		this.porcentagemRaiva = porcentagemRaiva;
-		this.novoNome = novoNome;
-		this.poderes = poderes;
+	public Sith(String nome, String genero, String especie, String dataDeNascimento, Planeta localDeOrigem,
+				double concentracaoDeMidichlorians, Academia academia, String novoNome, double porcentagemRaiva, Poder[] poderes) {
+		super(nome, genero, especie, dataDeNascimento, localDeOrigem, concentracaoDeMidichlorians);
 		this.academia = academia;
+		this.novoNome = novoNome;
+		this.porcentagemRaiva = porcentagemRaiva;
+		this.poderes = poderes;
 	}
 
 	public void setAcademia(Academia academia) {

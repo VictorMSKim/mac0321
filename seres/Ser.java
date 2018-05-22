@@ -11,7 +11,8 @@ public class Ser {
 	private Planeta localDeOrigem;
 	private double concentracaoDeMidichlorians;
 	
-	public Ser(String nome, String genero, String especie, String dataDeNascimento, Planeta localDeOrigem, double concentracaoDeMidichlorians) {
+	public Ser(String nome, String genero, String especie, String dataDeNascimento, Planeta localDeOrigem,
+               double concentracaoDeMidichlorians) {
 		this.nome = nome;
 		this.genero = genero;
 		this.especie = especie;

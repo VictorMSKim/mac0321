@@ -1,20 +1,27 @@
 package seres;
 
 import lugares.Academia;
+import lugares.Planeta;
 
 public class Padawan extends Jedi {
 
     private boolean consegueConstruirSabre;
     private Cavaleiro treinador;
 
-    public Padawan(double pazInterna, Poder[] poderes, Academia academia, boolean consegueConstruirSabre, Cavaleiro treinador) {
-        super(pazInterna, poderes, academia);
+    public Padawan(String nome, String genero, String especie, String dataDeNascimento, Planeta localDeOrigem,
+                   double concentracaoDeMidichlorians, double pazInterna, Poder[] poderes, Academia academia,
+                   boolean consegueConstruirSabre, Cavaleiro treinador) {
+        super(nome, genero, especie, dataDeNascimento, localDeOrigem, concentracaoDeMidichlorians, pazInterna, poderes,
+                academia);
         this.consegueConstruirSabre = consegueConstruirSabre;
         this.treinador = treinador;
     }
 
-    public Padawan(double pazInterna, Poder[] poderes, Academia academia, Cavaleiro treinador) {
-        this(pazInterna, poderes, academia, false, treinador);
+    public Padawan(String nome, String genero, String especie, String dataDeNascimento, Planeta localDeOrigem,
+                   double concentracaoDeMidichlorians, double pazInterna, Poder[] poderes, Academia academia,
+                   Cavaleiro treinador) {
+        this(nome, genero, especie, dataDeNascimento, localDeOrigem, concentracaoDeMidichlorians, pazInterna, poderes,
+                academia, false, treinador);
     }
 
     public boolean isConsegueConstruirSabre() {

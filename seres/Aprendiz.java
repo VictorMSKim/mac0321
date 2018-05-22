@@ -1,6 +1,7 @@
 package seres;
 
 import lugares.Academia;
+import lugares.Planeta;
 
 public class Aprendiz extends Sith{
 
@@ -8,8 +9,11 @@ public class Aprendiz extends Sith{
 
 	private Lorde lorde;
 
-	public Aprendiz(double porcentagemRaiva, String novoNome, Poder[] poderes, Academia academia, boolean consegueConstruirSabre, Lorde lorde) {
-		super(porcentagemRaiva, novoNome, poderes, academia);
+	public Aprendiz(String nome, String genero, String especie, String dataDeNascimento, Planeta localDeOrigem,
+					double concentracaoDeMidichlorians, Academia academia, String novoNome, double porcentagemRaiva,
+					Poder[] poderes, boolean consegueConstruirSabre, Lorde lorde) {
+		super(nome, genero, especie, dataDeNascimento, localDeOrigem, concentracaoDeMidichlorians, academia, novoNome,
+				porcentagemRaiva, poderes);
 		this.consegueConstruirSabre = consegueConstruirSabre;
 		this.lorde = lorde;
 	}

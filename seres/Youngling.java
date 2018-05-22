@@ -1,6 +1,7 @@
 package seres;
 
 import lugares.Academia;
+import lugares.Planeta;
 
 public class Youngling extends Jedi {
 
@@ -8,15 +9,21 @@ public class Youngling extends Jedi {
     private Mestre mestre;
     private boolean JaColheuCristais;
 
-    public Youngling(double pazInterna, Poder[] poderes, Academia academia, String clan, Mestre mestre, boolean jaColheuCristais) {
-        super(pazInterna, poderes, academia);
+    public Youngling(String nome, String genero, String especie, String dataDeNascimento, Planeta localDeOrigem,
+                     double concentracaoDeMidichlorians, double pazInterna, Poder[] poderes, Academia academia,
+                     String clan, Mestre mestre, boolean jaColheuCristais) {
+        super(nome, genero, especie, dataDeNascimento, localDeOrigem, concentracaoDeMidichlorians, pazInterna, poderes,
+                academia);
         this.clan = clan;
         this.mestre = mestre;
         JaColheuCristais = jaColheuCristais;
     }
 
-    public Youngling(double pazInterna, Poder[] poderes, Academia academia, String clan, Mestre mestre) {
-        this(pazInterna, poderes, academia, clan, mestre, false);
+    public Youngling(String nome, String genero, String especie, String dataDeNascimento, Planeta localDeOrigem,
+                     double concentracaoDeMidichlorians, double pazInterna, Poder[] poderes, Academia academia,
+                     String clan, Mestre mestre) {
+        this(nome, genero, especie, dataDeNascimento, localDeOrigem, concentracaoDeMidichlorians, pazInterna, poderes,
+                academia, clan, mestre, false);
     }
 
     public String getClan() {
