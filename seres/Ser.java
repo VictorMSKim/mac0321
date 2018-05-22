@@ -1,19 +1,24 @@
 package seres;
 
+import lugares.Planeta;
+
 public class Ser {
 	
 	private String nome;
-	
 	private String genero;
-	
 	private String especie;
-	
 	private String dataDeNascimento;
-	
-	private String localDeOrigem;
-	
+	private Planeta localDeOrigem;
 	private double concentracaoDeMidichlorians;
 	
+	public Ser(String nome, String genero, String especie, String dataDeNascimento, Planeta localDeOrigem, double concentracaoDeMidichlorians) {
+		this.nome = nome;
+		this.genero = genero;
+		this.especie = especie;
+		this.dataDeNascimento = dataDeNascimento;
+		this.localDeOrigem = localDeOrigem;
+		this.concentracaoDeMidichlorians = concentracaoDeMidichlorians;
+	}
 
 	public void setNome(String nome) {
 		this.nome = nome;
@@ -51,11 +56,11 @@ public class Ser {
 	}
 	
 
-	public void setLocalDeOrigem(String localDeOrigem) {
+	public void setLocalDeOrigem(Planeta localDeOrigem) {
 		this.localDeOrigem = localDeOrigem;
 	}
 
-	public String getLocalDeOrigem() {
+	public Planeta getLocalDeOrigem() {
 		return localDeOrigem;
 	}
 
