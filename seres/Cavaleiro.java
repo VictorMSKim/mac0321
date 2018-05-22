@@ -32,4 +32,5 @@ public class Cavaleiro extends Jedi {
     public void setSabre(SabreDeLuz sabre) {
         this.sabre = sabre;
     }
+
 }

@@ -39,4 +39,5 @@ public class Padawan extends Jedi {
     public void setTreinador(Cavaleiro treinador) {
         this.treinador = treinador;
     }
+
 }

@@ -3,7 +3,7 @@ package seres;
 import lugares.Academia;
 import lugares.Planeta;
 
-public abstract class Jedi extends Ser implements UsuarioDaForca {
+public abstract class Jedi extends Ser {
 
     private double pazInterna;
     private Poder[] poderes = new Poder[Poder.NUMERO_PODERES];
