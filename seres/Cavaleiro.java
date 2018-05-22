@@ -8,10 +8,10 @@ public class Cavaleiro extends Jedi {
     private int anoDeAprovacao;
     private SabreDeLuz sabre;
 
-    public Cavaleiro(String nome, String genero, String especie, String dataDeNascimento, Planeta localDeOrigem,
+    public Cavaleiro(String nome, String genero, String especie, int anoDeNascimento, Planeta localDeOrigem,
                      double concentracaoDeMidichlorians, double pazInterna, Poder[] poderes, Academia academia,
                      int anoDeAprovacao, SabreDeLuz sabre) {
-        super(nome, genero, especie, dataDeNascimento, localDeOrigem, concentracaoDeMidichlorians, pazInterna, poderes,
+        super(nome, genero, especie, anoDeNascimento, localDeOrigem, concentracaoDeMidichlorians, pazInterna, poderes,
                 academia);
         this.anoDeAprovacao = anoDeAprovacao;
         this.sabre = sabre;

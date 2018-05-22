@@ -9,9 +9,9 @@ public abstract class Jedi extends Ser {
     private Poder[] poderes = new Poder[Poder.NUMERO_PODERES];
     private Academia academia;
 
-    public Jedi(String nome, String genero, String especie, String dataDeNascimento, Planeta localDeOrigem,
+    public Jedi(String nome, String genero, String especie, int anoDeNascimento, Planeta localDeOrigem,
                 double concentracaoDeMidichlorians, double pazInterna, Poder[] poderes, Academia academia) {
-        super(nome, genero, especie, dataDeNascimento, localDeOrigem, concentracaoDeMidichlorians);
+        super(nome, genero, especie, anoDeNascimento, localDeOrigem, concentracaoDeMidichlorians);
         this.pazInterna = pazInterna;
         this.poderes = poderes;
         this.academia = academia;

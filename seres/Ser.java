@@ -7,16 +7,16 @@ public class Ser {
 	private String nome;
 	private String genero;
 	private String especie;
-	private String dataDeNascimento;
+	private int anoDeNascimento;
 	private Planeta localDeOrigem;
 	private double concentracaoDeMidichlorians;
 	
-	public Ser(String nome, String genero, String especie, String dataDeNascimento, Planeta localDeOrigem,
+	public Ser(String nome, String genero, String especie, int anoDeNascimento, Planeta localDeOrigem,
                double concentracaoDeMidichlorians) {
 		this.nome = nome;
 		this.genero = genero;
 		this.especie = especie;
-		this.dataDeNascimento = dataDeNascimento;
+		this.anoDeNascimento = anoDeNascimento;
 		this.localDeOrigem = localDeOrigem;
 		this.concentracaoDeMidichlorians = concentracaoDeMidichlorians;
 	}
@@ -48,12 +48,12 @@ public class Ser {
 	}
 	
 	
-	public void setDataDeNascimento(String dataDeNascimento) {
-		this.dataDeNascimento = dataDeNascimento;
+	public void setAnoDeNascimento(int anoDeNascimento) {
+		this.anoDeNascimento = anoDeNascimento;
 	}
 	
-	public String getDataDeNascimento() {
-		return dataDeNascimento;
+	public String getAnoDeNascimento() {
+		return anoDeNascimento;
 	}
 	
 

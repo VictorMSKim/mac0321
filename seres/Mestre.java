@@ -8,19 +8,19 @@ public class Mestre extends Cavaleiro {
     private double campoDeVidencia;
     private boolean imortalidade;
 
-    public Mestre(String nome, String genero, String especie, String dataDeNascimento, Planeta localDeOrigem,
+    public Mestre(String nome, String genero, String especie, int anoDeNascimento, Planeta localDeOrigem,
                   double concentracaoDeMidichlorians, double pazInterna, Poder[] poderes, Academia academia,
                   int anoDeAprovacao, SabreDeLuz sabre, double campoDeVidencia, boolean imortalidade) {
-        super(nome, genero, especie, dataDeNascimento, localDeOrigem, concentracaoDeMidichlorians, pazInterna, poderes,
+        super(nome, genero, especie, anoDeNascimento, localDeOrigem, concentracaoDeMidichlorians, pazInterna, poderes,
                 academia, anoDeAprovacao, sabre);
         this.campoDeVidencia = campoDeVidencia;
         this.imortalidade = imortalidade;
     }
 
-    public Mestre(String nome, String genero, String especie, String dataDeNascimento, Planeta localDeOrigem,
+    public Mestre(String nome, String genero, String especie, int anoDeNascimento, Planeta localDeOrigem,
                   double concentracaoDeMidichlorians, double pazInterna, Poder[] poderes, Academia academia,
                   int anoDeAprovacao, SabreDeLuz sabre, double campoDeVidencia) {
-        this(nome, genero, especie, dataDeNascimento, localDeOrigem, concentracaoDeMidichlorians, pazInterna, poderes,
+        this(nome, genero, especie, anoDeNascimento, localDeOrigem, concentracaoDeMidichlorians, pazInterna, poderes,
                 academia, anoDeAprovacao, sabre, campoDeVidencia, false);
     }
 
