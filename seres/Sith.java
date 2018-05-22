@@ -3,7 +3,7 @@ package seres;
 import lugares.Academia;
 import lugares.Planeta;
 
-public abstract class Sith extends Ser implements UsuarioDaForca {
+public abstract class Sith extends Ser {
 
 	private Academia academia;
 

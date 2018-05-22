@@ -3,7 +3,7 @@ package seres;
 import lugares.Academia;
 import lugares.Planeta;
 
-public class Cavaleiro extends Jedi implements UsuarioDaForca {
+public class Cavaleiro extends Jedi {
 
     private int anoDeAprovacao;
     private SabreDeLuz sabre;
@@ -32,4 +32,5 @@ public class Cavaleiro extends Jedi implements UsuarioDaForca {
     public void setSabre(SabreDeLuz sabre) {
         this.sabre = sabre;
     }
+
 }
