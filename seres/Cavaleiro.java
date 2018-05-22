@@ -1,14 +1,18 @@
 package seres;
 
 import lugares.Academia;
+import lugares.Planeta;
 
 public class Cavaleiro extends Jedi {
 
     private int anoDeAprovacao;
     private SabreDeLuz sabre;
 
-    public Cavaleiro(double pazInterna, Poder[] poderes, Academia academia, int anoDeAprovacao, SabreDeLuz sabre) {
-        super(pazInterna, poderes, academia);
+    public Cavaleiro(String nome, String genero, String especie, String dataDeNascimento, Planeta localDeOrigem,
+                     double concentracaoDeMidichlorians, double pazInterna, Poder[] poderes, Academia academia,
+                     int anoDeAprovacao, SabreDeLuz sabre) {
+        super(nome, genero, especie, dataDeNascimento, localDeOrigem, concentracaoDeMidichlorians, pazInterna, poderes,
+                academia);
         this.anoDeAprovacao = anoDeAprovacao;
         this.sabre = sabre;
     }

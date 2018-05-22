@@ -1,14 +1,17 @@
 package seres;
 
 import lugares.Academia;
+import lugares.Planeta;
 
-public abstract class Jedi extends Ser {
+public abstract class Jedi extends Ser implements UsuarioDaForca {
 
     private double pazInterna;
     private Poder[] poderes = new Poder[Poder.NUMERO_PODERES];
     private Academia academia;
 
-    public Jedi(double pazInterna, Poder[] poderes, Academia academia) {
+    public Jedi(String nome, String genero, String especie, String dataDeNascimento, Planeta localDeOrigem,
+                double concentracaoDeMidichlorians, double pazInterna, Poder[] poderes, Academia academia) {
+        super(nome, genero, especie, dataDeNascimento, localDeOrigem, concentracaoDeMidichlorians);
         this.pazInterna = pazInterna;
         this.poderes = poderes;
         this.academia = academia;
