@@ -1,7 +1,7 @@
 package missao;
 
 import lugares.Planeta;
-import seres.LiderDeMissao;
+import seres.ParticipanteDeMissao;
 import seres.Ser;
 
 import java.util.List;
@@ -9,25 +9,29 @@ import java.util.List;
 public class Missao {
 
     private int anoDeElaboracao;
-    private int criadorDaMissao;
-    private LiderDeMissao ResponsavelPelaMissao;
+    private ParticipanteDeMissao[] criadorDaMissao;
+    private String nomeDaMissao;
+    private ParticipanteDeMissao[] responsavelPelaMissao;
     private boolean cumprida;
     private Planeta local;
+    private String proposito;
     private List<Ser> envolvidos;
 
-    public Missao(int anoDeElaboracao, int criadorDaMissao, LiderDeMissao responsavelPelaMissao, boolean cumprida,
-                  Planeta local, List<Ser> envolvidos) {
+    public Missao(int anoDeElaboracao, ParticipanteDeMissao[] criadorDaMissao, String nomeDaMissao, ParticipanteDeMissao[] responsavelPelaMissao, boolean cumprida,
+                  Planeta local, String proposito, List<Ser> envolvidos) {
         this.anoDeElaboracao = anoDeElaboracao;
         this.criadorDaMissao = criadorDaMissao;
-        ResponsavelPelaMissao = responsavelPelaMissao;
+        this.nomeDaMissao = nomeDaMissao;
+        this.responsavelPelaMissao = responsavelPelaMissao;
         this.cumprida = cumprida;
         this.local = local;
+        this.proposito = proposito;
         this.envolvidos = envolvidos;
     }
 
-    public Missao(int anoDeElaboracao, int criadorDaMissao, LiderDeMissao responsavelPelaMissao, Planeta local,
-                  List<Ser> envolvidos) {
-       this(anoDeElaboracao, criadorDaMissao, responsavelPelaMissao, false, local, envolvidos);
+    public Missao(int anoDeElaboracao, ParticipanteDeMissao[] criadorDaMissao, String nomeDaMissao,ParticipanteDeMissao[] responsavelPelaMissao, Planeta local,
+                  String proposito, List<Ser> envolvidos) {
+       this(anoDeElaboracao, criadorDaMissao, nomeDaMissao, responsavelPelaMissao, false, local, proposito, envolvidos);
     }
 
     public int getAnoDeElaboracao() {
@@ -38,20 +42,28 @@ public class Missao {
         this.anoDeElaboracao = anoDeElaboracao;
     }
 
-    public int getCriadorDaMissao() {
+    public ParticipanteDeMissao[] getCriadorDaMissao() {
         return criadorDaMissao;
     }
 
-    public void setCriadorDaMissao(int criadorDaMissao) {
+    public void setCriadorDaMissao(ParticipanteDeMissao[] criadorDaMissao) {
         this.criadorDaMissao = criadorDaMissao;
     }
 
-    public LiderDeMissao getResponsavelPelaMissao() {
-        return ResponsavelPelaMissao;
+    public String getNomeDaMissao() {
+        return nomeDaMissao;
     }
 
-    public void setResponsavelPelaMissao(LiderDeMissao responsavelPelaMissao) {
-        ResponsavelPelaMissao = responsavelPelaMissao;
+    public void setNomeDaMissao(String nomeDaMissao) {
+        this.nomeDaMissao = nomeDaMissao;
+    }
+
+    public ParticipanteDeMissao[] getResponsavelPelaMissao() {
+        return responsavelPelaMissao;
+    }
+
+    public void setResponsavelPelaMissao(ParticipanteDeMissao[] responsavelPelaMissao) {
+        this.responsavelPelaMissao = responsavelPelaMissao;
     }
 
     public boolean isCumprida() {
@@ -68,6 +80,14 @@ public class Missao {
 
     public void setLocal(Planeta local) {
         this.local = local;
+    }
+
+    public String getProposito() {
+        return proposito;
+    }
+
+    public void setProposito(String proposito) {
+        this.proposito = proposito;
     }
 
     public List<Ser> getEnvolvidos() {

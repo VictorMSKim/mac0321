@@ -3,7 +3,7 @@ package seres;
 import lugares.Academia;
 import lugares.Planeta;
 
-public class Lorde extends Sith implements LiderDeMissao {
+public class Lorde extends Sith {
 
     private SabreDeLuz sabre;
 
@@ -34,8 +34,8 @@ public class Lorde extends Sith implements LiderDeMissao {
         return campoDeVidencia;
     }
 
-    @Override
-    public void LideraMissao() {
-        //TODO
-    }
+    // @Override
+    // public void LideraMissao() {
+    //     //TODO
+    // }
 }
