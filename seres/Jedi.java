@@ -5,9 +5,7 @@ import lugares.Academia;
 public abstract class Jedi extends Ser {
 
     private double pazInterna;
-
     private Poder[] poderes = new Poder[Poder.NUMERO_PODERES];
-
     private Academia academia;
 
     public Jedi(double pazInterna, Poder[] poderes, Academia academia) {
