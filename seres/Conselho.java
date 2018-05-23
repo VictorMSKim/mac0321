@@ -4,11 +4,11 @@ public class Conselho {
 
 	private Conselho conselho;
 
-	public Conselho(Sith conselhoDeSiths) {
+	public Conselho(Sith[] conselhoDeSiths) {
 		this.conselho = conselhoDeSiths;
 	}
 
-	public Conselho(Jedi conselhoDeJedis) {
+	public Conselho(Jedi[] conselhoDeJedis) {
 		this.conselho = conselhoDeJedis;
 	}
 
