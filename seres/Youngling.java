@@ -5,32 +5,32 @@ import lugares.Planeta;
 
 public class Youngling extends Jedi {
 
-    private String clan;
+    private Clan clan;
     private Mestre mestre;
     private boolean JaColheuCristais;
 
-    public Youngling(String nome, String genero, String especie, String dataDeNascimento, Planeta localDeOrigem,
+    public Youngling(String nome, String genero, String especie, int anoDeNascimento, Planeta localDeOrigem,
                      double concentracaoDeMidichlorians, double pazInterna, Poder[] poderes, Academia academia,
-                     String clan, Mestre mestre, boolean jaColheuCristais) {
-        super(nome, genero, especie, dataDeNascimento, localDeOrigem, concentracaoDeMidichlorians, pazInterna, poderes,
+                     Clan clan, Mestre mestre, boolean jaColheuCristais) {
+        super(nome, genero, especie, anoDeNascimento, localDeOrigem, concentracaoDeMidichlorians, pazInterna, poderes,
                 academia);
         this.clan = clan;
         this.mestre = mestre;
         JaColheuCristais = jaColheuCristais;
     }
 
-    public Youngling(String nome, String genero, String especie, String dataDeNascimento, Planeta localDeOrigem,
+    public Youngling(String nome, String genero, String especie, int anoDeNascimento, Planeta localDeOrigem,
                      double concentracaoDeMidichlorians, double pazInterna, Poder[] poderes, Academia academia,
-                     String clan, Mestre mestre) {
-        this(nome, genero, especie, dataDeNascimento, localDeOrigem, concentracaoDeMidichlorians, pazInterna, poderes,
+                     Clan clan, Mestre mestre) {
+        this(nome, genero, especie, anoDeNascimento, localDeOrigem, concentracaoDeMidichlorians, pazInterna, poderes,
                 academia, clan, mestre, false);
     }
 
-    public String getClan() {
+    public Clan getClan() {
         return clan;
     }
 
-    public void setClan(String clan) {
+    public void setClan(Clan clan) {
         this.clan = clan;
     }
 

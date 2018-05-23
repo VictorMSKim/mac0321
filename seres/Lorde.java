@@ -3,16 +3,16 @@ package seres;
 import lugares.Academia;
 import lugares.Planeta;
 
-public class Lorde extends Sith implements LiderDeMissao {
+public class Lorde extends Sith {
 
     private SabreDeLuz sabre;
 
     private double campoDeVidencia;
 
-    public Lorde(String nome, String genero, String especie, String dataDeNascimento, Planeta localDeOrigem,
+    public Lorde(String nome, String genero, String especie, int anoDeNascimento, Planeta localDeOrigem,
                  double concentracaoDeMidichlorians, Academia academia, String novoNome, double porcentagemRaiva,
                  Poder[] poderes, SabreDeLuz sabre, double campoDeVidencia) {
-        super(nome, genero, especie, dataDeNascimento, localDeOrigem, concentracaoDeMidichlorians, academia, novoNome,
+        super(nome, genero, especie, anoDeNascimento, localDeOrigem, concentracaoDeMidichlorians, academia, novoNome,
                 porcentagemRaiva, poderes);
         this.sabre = sabre;
         this.campoDeVidencia = campoDeVidencia;
@@ -34,8 +34,8 @@ public class Lorde extends Sith implements LiderDeMissao {
         return campoDeVidencia;
     }
 
-    @Override
-    public void LideraMissao() {
-        //TODO
-    }
+    // @Override
+    // public void LideraMissao() {
+    //     //TODO
+    // }
 }

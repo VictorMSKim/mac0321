@@ -13,9 +13,9 @@ public abstract class Sith extends Ser {
 
 	private Poder[] poderes = new Poder[Poder.NUMERO_PODERES];
 
-	public Sith(String nome, String genero, String especie, String dataDeNascimento, Planeta localDeOrigem,
+	public Sith(String nome, String genero, String especie, int anoDeNascimento, Planeta localDeOrigem,
 				double concentracaoDeMidichlorians, Academia academia, String novoNome, double porcentagemRaiva, Poder[] poderes) {
-		super(nome, genero, especie, dataDeNascimento, localDeOrigem, concentracaoDeMidichlorians);
+		super(nome, genero, especie, anoDeNascimento, localDeOrigem, concentracaoDeMidichlorians);
 		this.academia = academia;
 		this.novoNome = novoNome;
 		this.porcentagemRaiva = porcentagemRaiva;

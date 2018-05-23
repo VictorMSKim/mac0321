@@ -9,10 +9,10 @@ public class Aprendiz extends Sith{
 
 	private Lorde lorde;
 
-	public Aprendiz(String nome, String genero, String especie, String dataDeNascimento, Planeta localDeOrigem,
+	public Aprendiz(String nome, String genero, String especie, int anoDeNascimento, Planeta localDeOrigem,
 					double concentracaoDeMidichlorians, Academia academia, String novoNome, double porcentagemRaiva,
 					Poder[] poderes, boolean consegueConstruirSabre, Lorde lorde) {
-		super(nome, genero, especie, dataDeNascimento, localDeOrigem, concentracaoDeMidichlorians, academia, novoNome,
+		super(nome, genero, especie, anoDeNascimento, localDeOrigem, concentracaoDeMidichlorians, academia, novoNome,
 				porcentagemRaiva, poderes);
 		this.consegueConstruirSabre = consegueConstruirSabre;
 		this.lorde = lorde;
