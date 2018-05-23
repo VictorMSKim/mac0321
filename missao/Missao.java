@@ -9,15 +9,15 @@ import java.util.List;
 public class Missao {
 
     private int anoDeElaboracao;
-    private ParticipanteDeMissao[] criadorDaMissao;
+    private ParticipanteDeMissao criadorDaMissao;
     private String nomeDaMissao;
-    private ParticipanteDeMissao[] responsavelPelaMissao;
+    private ParticipanteDeMissao responsavelPelaMissao;
     private boolean cumprida;
     private Planeta local;
     private String proposito;
     private List<Ser> envolvidos;
 
-    public Missao(int anoDeElaboracao, ParticipanteDeMissao[] criadorDaMissao, String nomeDaMissao, ParticipanteDeMissao[] responsavelPelaMissao, boolean cumprida,
+    public Missao(int anoDeElaboracao, ParticipanteDeMissao criadorDaMissao, String nomeDaMissao, ParticipanteDeMissao responsavelPelaMissao, boolean cumprida,
                   Planeta local, String proposito, List<Ser> envolvidos) {
         this.anoDeElaboracao = anoDeElaboracao;
         this.criadorDaMissao = criadorDaMissao;
@@ -29,7 +29,7 @@ public class Missao {
         this.envolvidos = envolvidos;
     }
 
-    public Missao(int anoDeElaboracao, ParticipanteDeMissao[] criadorDaMissao, String nomeDaMissao,ParticipanteDeMissao[] responsavelPelaMissao, Planeta local,
+    public Missao(int anoDeElaboracao, ParticipanteDeMissao criadorDaMissao, String nomeDaMissao,ParticipanteDeMissao responsavelPelaMissao, Planeta local,
                   String proposito, List<Ser> envolvidos) {
        this(anoDeElaboracao, criadorDaMissao, nomeDaMissao, responsavelPelaMissao, false, local, proposito, envolvidos);
     }
@@ -42,11 +42,11 @@ public class Missao {
         this.anoDeElaboracao = anoDeElaboracao;
     }
 
-    public ParticipanteDeMissao[] getCriadorDaMissao() {
+    public ParticipanteDeMissao getCriadorDaMissao() {
         return criadorDaMissao;
     }
 
-    public void setCriadorDaMissao(ParticipanteDeMissao[] criadorDaMissao) {
+    public void setCriadorDaMissao(ParticipanteDeMissao criadorDaMissao) {
         this.criadorDaMissao = criadorDaMissao;
     }
 
@@ -58,11 +58,11 @@ public class Missao {
         this.nomeDaMissao = nomeDaMissao;
     }
 
-    public ParticipanteDeMissao[] getResponsavelPelaMissao() {
+    public ParticipanteDeMissao getResponsavelPelaMissao() {
         return responsavelPelaMissao;
     }
 
-    public void setResponsavelPelaMissao(ParticipanteDeMissao[] responsavelPelaMissao) {
+    public void setResponsavelPelaMissao(ParticipanteDeMissao responsavelPelaMissao) {
         this.responsavelPelaMissao = responsavelPelaMissao;
     }
 
