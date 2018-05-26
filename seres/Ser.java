@@ -52,7 +52,7 @@ public class Ser {
 		this.anoDeNascimento = anoDeNascimento;
 	}
 	
-	public String getAnoDeNascimento() {
+	public int getAnoDeNascimento() {
 		return anoDeNascimento;
 	}
 	

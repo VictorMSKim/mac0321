@@ -2,7 +2,7 @@ package seres;
 
 public class ParticipanteDeMissao {
 
-    private ParticipanteDeMissao participante;
+    private Ser participante;
 
     public ParticipanteDeMissao(Jedi participante) {
     	this.participante = participante;
@@ -12,11 +12,11 @@ public class ParticipanteDeMissao {
     	this.participante = participante;
     }
 
-    public void setParticipante(ParticipanteDeMissao participante) {
+    public void setParticipante(Ser participante) {
     	this.participante = participante;
     }
 
-    public ParticipanteDeMissao getParticipante() {
+    public Ser getParticipante() {
     	return participante;
     }
 
