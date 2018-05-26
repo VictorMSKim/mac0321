@@ -2,7 +2,7 @@ package seres;
 
 public class Conselho {
 
-	private Conselho conselho;
+	private Ser[] conselho;
 
 	public Conselho(Sith[] conselhoDeSiths) {
 		this.conselho = conselhoDeSiths;
@@ -12,11 +12,11 @@ public class Conselho {
 		this.conselho = conselhoDeJedis;
 	}
 
-	public void setConselho(Conselho conselho) {
+	public void setConselho(Ser[] conselho) {
 		this.conselho = conselho;
 	}
 
-	public Conselho getConselho() {
+	public Ser[] getConselho() {
 		return conselho;
 	}
 

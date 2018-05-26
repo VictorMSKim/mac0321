@@ -23,8 +23,8 @@ public class BatalhaController extends Controller {
                 new Habilidade(Habilidade.TipoDeHabilidade.SABRE, 10)
         };
 
-        Jogador jedi = new Jogador(100, true, true, habilidadesJedi);
-        Jogador sith = new Jogador(150, true, true, habilidadesSith);
+        Jogador jedi = new Jogador("j1", 100, true, true, habilidadesJedi);
+        Jogador sith = new Jogador("j2", 150, true, true, habilidadesSith);
         BatalhaController bc = new BatalhaController(sith, jedi);
 
         while (jedi.getVida() > 0 && sith.getVida() > 0) {

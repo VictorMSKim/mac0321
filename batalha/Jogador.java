@@ -1,7 +1,10 @@
 package batalha;
 
+import batalha.controller.Acao;
+
 public class Jogador {
 
+    private String nome;
     private int vida;
     private boolean dominioForca;
     private boolean dominioSabre;
@@ -9,11 +12,16 @@ public class Jogador {
     private Acao acao;
     private Estado estado;
 
-    public Jogador(int vida, boolean dominioForca, boolean dominioSabre, Habilidade[] habilidades) {
+    public Jogador(String nome, int vida, boolean dominioForca, boolean dominioSabre, Habilidade[] habilidades) {
+        this.nome = nome;
         this.vida = vida;
         this.dominioForca = dominioForca;
         this.dominioSabre = dominioSabre;
         this.habilidades = habilidades;
+    }
+
+    public String getNome() {
+        return nome;
     }
 
     public int getVida() {
