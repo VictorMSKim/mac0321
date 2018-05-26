@@ -8,6 +8,32 @@ public class BatalhaController extends Controller {
     private Jogador mestreJedi;
     private Jogador lordeSith;
 
+    public static void main (String[] args) {
+        Habilidade[] habilidadesJedi = {
+                new Habilidade(Habilidade.TipoDeHabilidade.FORCA, 30),
+                new Habilidade(Habilidade.TipoDeHabilidade.FORCA, 25),
+                new Habilidade(Habilidade.TipoDeHabilidade.FORCA, 20),
+                new Habilidade(Habilidade.TipoDeHabilidade.SABRE, 10)
+        };
+
+        Habilidade[] habilidadesSith = {
+                new Habilidade(Habilidade.TipoDeHabilidade.FORCA, 30),
+                new Habilidade(Habilidade.TipoDeHabilidade.FORCA, 25),
+                new Habilidade(Habilidade.TipoDeHabilidade.FORCA, 20),
+                new Habilidade(Habilidade.TipoDeHabilidade.SABRE, 10)
+        };
+
+        Jogador jedi = new Jogador(100, true, true, habilidadesJedi);
+        Jogador sith = new Jogador(150, true, true, habilidadesSith);
+        BatalhaController bc = new BatalhaController(sith, jedi);
+
+        while (jedi.getVida() > 0 && sith.getVida() > 0) {
+            jedi.setAcao(new Ataque(habilidadesJedi[0]));
+            sith.setAcao(new Ataque(habilidadesSith[3]));
+            bc.addEvent(bc.new PreparaRodadaEvent(System.currentTimeMillis()));
+            bc.run();
+        }
+    }
 
     public BatalhaController(Jogador sith, Jogador jedi) {
         lordeSith = sith;
