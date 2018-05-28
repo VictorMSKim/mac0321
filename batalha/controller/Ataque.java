@@ -14,7 +14,8 @@ public class Ataque implements Acao {
         return ataque;
     }
 
-    public TipoDeAcao getTipo() {
-        return null;
+    public TipoDeAcao getTipoAcao() {
+        return TipoDeAcao.ataque;
     }
+
 }

@@ -2,38 +2,12 @@ package batalha.controller;
 
 import batalha.Habilidade;
 import batalha.Jogador;
+import java.lang.Math;
 
 public class BatalhaController extends Controller {
 
     private Jogador mestreJedi;
     private Jogador lordeSith;
-
-    public static void main (String[] args) {
-        Habilidade[] habilidadesJedi = {
-                new Habilidade(Habilidade.TipoDeHabilidade.FORCA, 30),
-                new Habilidade(Habilidade.TipoDeHabilidade.FORCA, 25),
-                new Habilidade(Habilidade.TipoDeHabilidade.FORCA, 20),
-                new Habilidade(Habilidade.TipoDeHabilidade.SABRE, 10)
-        };
-
-        Habilidade[] habilidadesSith = {
-                new Habilidade(Habilidade.TipoDeHabilidade.FORCA, 30),
-                new Habilidade(Habilidade.TipoDeHabilidade.FORCA, 25),
-                new Habilidade(Habilidade.TipoDeHabilidade.FORCA, 20),
-                new Habilidade(Habilidade.TipoDeHabilidade.SABRE, 10)
-        };
-
-        Jogador jedi = new Jogador("j1", 100, true, true, habilidadesJedi);
-        Jogador sith = new Jogador("j2", 150, true, true, habilidadesSith);
-        BatalhaController bc = new BatalhaController(sith, jedi);
-
-        while (jedi.getVida() > 0 && sith.getVida() > 0) {
-            jedi.setAcao(new Ataque(habilidadesJedi[0]));
-            sith.setAcao(new Ataque(habilidadesSith[3]));
-            bc.addEvent(bc.new PreparaRodadaEvent(System.currentTimeMillis()));
-            bc.run();
-        }
-    }
 
     public BatalhaController(Jogador sith, Jogador jedi) {
         lordeSith = sith;
@@ -82,7 +56,7 @@ public class BatalhaController extends Controller {
 
         @Override
         public String description() {
-            return jogador + " se prepara pra esquivar.";
+            return jogador.getNome() + " se prepara pra esquivar.";
         }
     }
 
@@ -95,8 +69,8 @@ public class BatalhaController extends Controller {
         @Override
         public void action() {
             //Poderia usar if (acaoJedi instanceof Ataque.java) {...} ao invés de switch(acaoJedi.getTipo()) {...}
-            if (mestreJedi.getAcao().getTipo() == Acao.TipoDeAcao.esquiva) {
-                if (lordeSith.getAcao().getTipo() == Acao.TipoDeAcao.esquiva) {
+            if (mestreJedi.getAcao().getTipoAcao() == Acao.TipoDeAcao.esquiva) {
+                if (lordeSith.getAcao().getTipoAcao() == Acao.TipoDeAcao.esquiva) {
                     addEvent(new EsquivaEvent(System.currentTimeMillis() + 1000, mestreJedi));
                     addEvent(new EsquivaEvent(System.currentTimeMillis() + 2000, lordeSith));
                 } else {
@@ -104,12 +78,12 @@ public class BatalhaController extends Controller {
                     addEvent(new AtacaEvent(System.currentTimeMillis() + 2000, lordeSith, mestreJedi));
                 }
             } else {
-                if (lordeSith.getAcao().getTipo() == Acao.TipoDeAcao.esquiva) {
+                if (lordeSith.getAcao().getTipoAcao() == Acao.TipoDeAcao.esquiva) {
                     addEvent(new EsquivaEvent(System.currentTimeMillis() + 1000, lordeSith));
                     addEvent(new AtacaEvent(System.currentTimeMillis() + 2000, mestreJedi, lordeSith));
                 } else {
-                    if (((Ataque) mestreJedi.getAcao()).getAtaque().getTipo() == Habilidade.TipoDeHabilidade.FORCA
-                            && ((Ataque) lordeSith.getAcao()).getAtaque().getTipo() == Habilidade.TipoDeHabilidade.SABRE) {
+                    if (((Ataque) mestreJedi.getAcao()).getAtaque().getTipoHabilidade() == Habilidade.TipoDeHabilidade.FORCA
+                            && ((Ataque) lordeSith.getAcao()).getAtaque().getTipoHabilidade() == Habilidade.TipoDeHabilidade.SABRE) {
                         addEvent(new AtacaEvent(System.currentTimeMillis() + 1000, lordeSith, mestreJedi));
                         addEvent(new AtacaEvent(System.currentTimeMillis() + 2000, mestreJedi, lordeSith));
                     } else {
@@ -125,4 +99,19 @@ public class BatalhaController extends Controller {
             return "Preparando rodada ...";
         }
     }
+
+    public static void main (String[] args) {
+
+        Jogador jedi = new Jogador("jedi", 100, 30, 60);
+        Jogador sith = new Jogador("sith", 150, 40, 40);
+        BatalhaController bc = new BatalhaController(sith, jedi);
+
+        while (jedi.getVida() > 0 && sith.getVida() > 0) {
+            jedi.setAcao();
+            sith.setAcao();
+            bc.addEvent(bc.new PreparaRodadaEvent(System.currentTimeMillis()));
+            bc.run();
+        }
+    }
+
 }

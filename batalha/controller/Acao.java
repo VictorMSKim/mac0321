@@ -2,7 +2,7 @@ package batalha.controller;
 
 public interface Acao {
 
-    TipoDeAcao getTipo();
+    TipoDeAcao getTipoAcao();
 
     enum TipoDeAcao {
         ataque, esquiva
